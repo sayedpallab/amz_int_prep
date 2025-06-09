@@ -1,7 +1,1 @@
-{
-  // ... other parts of your package.json ...
-  "devDependencies": {
-    "esbuild": "^0.20.0" // Or your desired version
-    // ... other dev dependencies ...
-  }
-}
+esbuild index.tsx --bundle --outfile=dist/bundle.js --minify --sourcemap --define:process.env.API_KEY="$API_KEY"
