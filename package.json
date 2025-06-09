@@ -5,8 +5,7 @@
   "description": "An application to help users prepare for Amazon interviews by managing STARL and freestyle questions, practicing with flashcards, and tracking progress.",
   "scripts": {
     "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --servedir=. --serve=:8000 --jsx-dev",
-    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --minify --sourcemap --define:process.env.API_KEY=\\\"\\\"AIzaSyAMItY-TjGQO0ubjZWLpRsCX237za6PhZ4\\\"\\\""
-  },
+    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --minify --sourcemap --define:process.env.API_KEY=\\\"\\\"$API_KEY\\\"\\\"
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
