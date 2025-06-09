@@ -1,0 +1,5 @@
+{
+  "name": "Amazon Interview Prep App",
+  "description": "An application to help users prepare for Amazon interviews by managing STARL and freestyle questions, practicing with flashcards, and tracking progress.",
+  "requestFramePermissions": []
+}
