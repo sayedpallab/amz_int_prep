@@ -1,0 +1,7 @@
+{
+  // ... other parts of your package.json ...
+  "devDependencies": {
+    "esbuild": "^0.20.0" // Or your desired version
+    // ... other dev dependencies ...
+  }
+}
