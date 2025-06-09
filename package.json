@@ -6,6 +6,4 @@
     // The $API_KEY will be your Netlify environment variable.
     // You can add --sourcemap if you want source maps for production.
     "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --servedir=. --serve=:8000" // Example dev script
-  },
-  // ...
-}
+  }
