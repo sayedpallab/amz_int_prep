@@ -3,19 +3,19 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Theme, QuestionAnswerItem, View, AiSuggestion, STARL, QuestionType, PanelSimulationRecord } from './types';
 import { INITIAL_QUESTIONS }
 from './constants';
-import useLocalStorage from './useLocalStorage';
-import useDisclosure from './useDisclosure';
-import Layout from './Layout';
-import QuestionList from './QuestionList';
-import AddQuestionForm from './AddQuestionForm';
-import Modal from './Modal';
-import SearchBar from './SearchBar';
-import FlashcardView from './FlashcardView';
-import ProgressDisplay from './ProgressDisplay';
-import InterviewModeView from './InterviewModeView';
-import AiRefinementModal from './AiRefinementModal';
+import useLocalStorage from './hooks/useLocalStorage';
+import useDisclosure from './hooks/useDisclosure';
+import Layout from './components/layout/Layout';
+import QuestionList from './components/qanda/QuestionList';
+import AddQuestionForm from './components/qanda/AddQuestionForm';
+import Modal from './components/ui/Modal';
+import SearchBar from './components/ui/SearchBar';
+import FlashcardView from './components/flashcards/FlashcardView';
+import ProgressDisplay from './components/tracking/ProgressDisplay';
+import InterviewModeView from './components/interviewmode/InterviewModeView';
+import AiRefinementModal from './components/ai/AiRefinementModal';
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
-import Button from './Button';
+import Button from './components/ui/Button';
 import { v4 as uuidv4 } from 'uuid';
 
 
