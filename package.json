@@ -1,9 +1,7 @@
 {
-  // ...
+
   "scripts": {
     "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --minify --define:process.env.API_KEY=\\\"\\\"$API_KEY\\\"\\\"",
-    // Note the escaped quotes for the API_KEY string injection. 
-    // The $API_KEY will be your Netlify environment variable.
-    // You can add --sourcemap if you want source maps for production.
-    "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --servedir=. --serve=:8000" // Example dev script
+ 
+    "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --servedir=. --serve=:8000" 
   }
