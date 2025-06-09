@@ -1,22 +1,11 @@
 {
-  "name": "amazon-interview-prep-app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  // ...
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --minify --define:process.env.API_KEY=\\\"\\\"$API_KEY\\\"\\\"",
+    // Note the escaped quotes for the API_KEY string injection. 
+    // The $API_KEY will be your Netlify environment variable.
+    // You can add --sourcemap if you want source maps for production.
+    "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --servedir=. --serve=:8000" // Example dev script
   },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "uuid": "^11.1.0",
-    "@google/genai": "latest"
-  },
-  "devDependencies": {
-    "@types/node": "^22.14.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.2.0"
-  }
+  // ...
 }
