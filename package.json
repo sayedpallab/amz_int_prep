@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --servedir=. --serve=:8000 --jsx-dev",
     "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --minify --sourcemap --define:process.env.API_KEY=\\\"\\\"$API_KEY\\\"\\\""
+      },
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
